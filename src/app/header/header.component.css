@@ -1,13 +1,13 @@
-@font-face {
+/* @font-face {
     font-family: 'Bauhaus 93';
     src: url('src\assets\Bauhaus-93-Regular.ttf');
-}
+} */
 
 
-@font-face {
+/* @font-face {
     font-family: 'Bangers';
     src: url('https://fonts.googleapis.com/css2?family=Bangers');
-}
+} */
 
 h1 {
     font-family: 'Bauhaus 93', 'Bangers', 'cursive';

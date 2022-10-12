@@ -20,4 +20,16 @@ export class GeneratorComponent {
     this.paragraphEmitter.emit(this.paragraphs);
   }
 
+  onAddClick(){
+    if(this.paragraphValue < 20){
+      this.paragraphValue = this.paragraphValue + 1;
+    }
+  }
+
+  onRemoveClick(){
+    if(this.paragraphValue >= 2){
+      this.paragraphValue = this.paragraphValue - 1;
+    }
+  }
+
 }

@@ -1,7 +1,9 @@
-<div class="row row-padding">
-    <div class="ipsum-generator">
-      <label>Number of paragraphs:</label>
-      <input type="number" #paragraphInput [(ngModel)]="paragraphValue" min="1" max="20">
-      <button class="btn btn-primary" (click)="onClick(paragraphInput.value)">Generate</button>
+<div class="row row-padding text-center">
+    <div>
+      <h2><b>Number of paragraphs:</b></h2>
+      <img (click)="onAddClick()" src="../../assets/add.svg">
+      <input type="number" class="shadow-sm paragraph-input" #paragraphInput [(ngModel)]="paragraphValue" min="1" max="20">
+      <img (click)="onRemoveClick()" src="../../assets/remove.svg">
+      <button class="btn btn-primary shadow-sm" (click)="onClick(paragraphInput.value)">Generate</button>
     </div>
 </div>
