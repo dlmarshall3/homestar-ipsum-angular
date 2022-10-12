@@ -1,5 +1,11 @@
-<div class="card" *ngFor="let par of paragraphs">
-    <div class="card-body">
-      {{par}}
+<div class="row">
+  <div class="col-12"  *ngFor="let par of paragraphs">
+    <div class="card shadow" style="width:100%;">
+      <div class="card-body">
+        <p #targetText>{{par}}</p>
+        <button class="btn btn-success" (click)="onClickCopyText(targetText.innerText)">Copy</button>
+      </div>
     </div>
+  </div>
 </div>
+

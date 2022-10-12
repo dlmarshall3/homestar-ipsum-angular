@@ -1,16 +1,19 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
   selector: 'app-paragraphs',
   templateUrl: './paragraphs.component.html',
   styleUrls: ['./paragraphs.component.css']
 })
-export class ParagraphsComponent implements OnInit {
+export class ParagraphsComponent {
   @Input() paragraphs = [];
+  @Input() paragraphInt: number = 1;
 
-  constructor() { }
+  constructor(private _clipboardService: ClipboardService) { }
 
-  ngOnInit(): void {
+  onClickCopyText(text: string){
+    this._clipboardService.copy(text);
   }
-
 }

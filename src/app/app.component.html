@@ -1,19 +1,8 @@
-<h1>Homestar Ipsum Generator</h1>
-
-<div>
-  <p>Building a website for a multi-million dollar client, and with five minutes to spare, you realized you forgot to add WORDS? Standing in front of your soon-to-be bride, and it hits you that your vows are CRAP? Maybe you've been procrastinating for weeks on that NOT SO WELL-THOUGHT OUT ENGLILSH PAPER? Or maybe you just really want to sound more like your hero, SENOR CARDGAGE?</p>
+<div class="container masterDiv">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </div>
 
-<div>
-  <p>Well, look no further. Brought to you by the people who did not make Duck Pond, the bespoke Homestar Ipsum Generator ensures none of these very real and totally plausible situations will ever catch you off guard again.</p>
-</div>
 
-<div>
-  <p>Or our money back.</p>
-</div>
-
-<label>Number of paragraphs:</label>
-<input type="number" #paragraphInput><button class="btn btn-primary" (click)="onClick(paragraphInput.value)">Generate</button>
-
-<app-paragraphs [paragraphs]="paragraphs"></app-paragraphs>
 
